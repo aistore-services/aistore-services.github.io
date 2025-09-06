@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AiStore - AI & Machine Learning Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
+    header {
+      background: #fff;
+      border-bottom: #0779e4 3px solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 8%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #0779e4;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #0779e4;
+    }
+    #hero {
+      background: url('https://i.imgur.com/your-ai-image.jpg') no-repeat center center/cover;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+    #hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+    }
+    #hero-content h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    #hero-content p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      background: #0779e4;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #055bb5;
+    }
+    .container {
+      width: 85%;
+      margin: auto;
+      overflow: hidden;
+      padding: 40px 0;
+    }
+    section {
+      background: #fff;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 40px 30px;
+    }
+    h2 {
+      text-align: center;
+      color: #0779e4;
+      margin-bottom: 20px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .service-item {
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      text-align: center;
+    }
+    .team-member {
+      flex: 1 1 220px;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .team-member img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">AiStore</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div id="hero-content">
+      <h1>AI & Machine Learning Solutions</h1>
+      <p>Transforming complex problems into intelligent solutions.</p>
+      <a href="#services" class="btn">Explore Our Services</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Us</h2>
+      <p>AiStore is a research-driven organization at the forefront of AI and Machine Learning. We specialize in turning complex problems into practical, intelligent solutions through the development of machine learning models, fine-tuning large language models (LLMs), and creating AI-powered applications. Our expertise spans from data analysis and scientific computing to the rigorous application of theoretical knowledge to solve real-world challenges.</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Model Development</h3>
+          <p>Building and deploying custom machine learning and deep learning models to meet your specific needs.</p>
+        </div>
+        <div class="service-item">
+          <h3>LLM Fine-Tuning</h3>
+          <p>Customizing and optimizing large language models for specialized tasks and domains.</p>
+        </div>
+        <div class="service-item">
+          <h3>AI Applications</h3>
+          <p>Developing intelligent, AI-powered web applications and APIs for seamless integration.</p>
+        </div>
+        <div class="service-item">
+          <h3>Data Analysis</h3>
+          <p>Uncovering valuable insights from your data through comprehensive analysis and visualization.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <h2>Meet Our Team</h2>
+      <div class="team">
+        <div class="team-member">
+          <img src="https://i.imgur.com/placeholder.jpg" alt="Team Member">
+          <h3>Jane Doe</h3>
+          <p>Lead Data Scientist</p>
+        </div>
+        <div class="team-member">
+          <img src="https://i.imgur.com/placeholder.jpg" alt="Team Member">
+          <h3>John Smith</h3>
+          <p>AI Engineer</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p style="text-align:center;">Have a project in mind? Reach out at <a href="mailto:contact@aistore.ai">contact@aistore.ai</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AiStore. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
